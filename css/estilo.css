@@ -54,17 +54,34 @@ body {
     position: relative;
 }
 
-section{
+#icons{
+    text-align: center;
+}
+
+.icon{
+    height: 3%;
+    width: 3%;
+    justify-content: center;
+}
+
+#info{
     text-align: center;
     display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
 }
 
 #imagem-perfil{
     height: 25%;
     width: 25%;
+    border-radius: 20px;
 }
 
 #about{
-    
     max-width: 25vw;
+}
+
+#hobbies{
+    max-width: 25vw;
+    text-align: center;
 }
