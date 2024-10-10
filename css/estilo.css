@@ -1,0 +1,65 @@
+html {
+    font-family: cursive;
+}
+
+nav {
+    background-color: #0056b3;
+    padding: 1rem 1rem; 
+    border-radius: 8px;
+    margin-bottom: 2.8rem; 
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.nav-links {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    padding: 0; 
+    margin: 0;
+    align-items: center; 
+}
+
+.nav-links li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.1rem; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav-links li a:hover {
+    background-color: #007BFF; 
+    color: #fff; 
+}
+
+.nav-links li a:active {
+    background-color: #0056b3; 
+}
+
+body {
+    background-image: url("fundo2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#div-imagem{
+    text-align: center;
+    position: relative;
+}
+
+#imagem-perfil{
+    height: 25%;
+    width: 25%;
+}
+
+#about{
+    border-radius: 10px 15px;
+    border: solid black;
+}
