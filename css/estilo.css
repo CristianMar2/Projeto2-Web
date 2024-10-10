@@ -62,4 +62,12 @@ body {
 #about{
     border-radius: 10px 15px;
     border: solid black;
+    max-width: 25vw;
+}
+
+#hobbies{
+    text-indent: 20px;
+    text-align: justify;
+    border-radius: 10px 15px;
+    border: solid black;
 }
