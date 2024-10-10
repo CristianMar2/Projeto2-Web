@@ -3,7 +3,7 @@ html {
 }
 
 nav {
-    background-color: #0056b3;
+    background-color: gray;
     padding: 1rem 1rem; 
     border-radius: 8px;
     margin-bottom: 2.8rem; 
@@ -34,12 +34,12 @@ nav {
 }
 
 .nav-links li a:hover {
-    background-color: #007BFF; 
-    color: #fff; 
+    background-color: lightgray; 
+    color: black; 
 }
 
 .nav-links li a:active {
-    background-color: #0056b3; 
+    background-color: gray; 
 }
 
 body {
@@ -54,20 +54,17 @@ body {
     position: relative;
 }
 
+section{
+    text-align: center;
+    display: flex;
+}
+
 #imagem-perfil{
     height: 25%;
     width: 25%;
 }
 
 #about{
-    border-radius: 10px 15px;
-    border: solid black;
+    
     max-width: 25vw;
-}
-
-#hobbies{
-    text-indent: 20px;
-    text-align: justify;
-    border-radius: 10px 15px;
-    border: solid black;
 }
