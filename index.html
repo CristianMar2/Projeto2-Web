@@ -13,8 +13,9 @@
           <ul class="nav-links">
             <li><a href="#about">Sobre Mim</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#formacao">Formação Acadêmica</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
     </header>
@@ -48,21 +49,105 @@
     </section>
     <section id="info">
         <div id="about">
-        <h1>Sobre mim:</h1>
-        <b>Nome:</b> Cristian Martins Fernandes<br>
-        <b>Data de nascimento:</b> 14/02/2002 <br>
-        <b>Email:</b> cristianmarfer14@gmail.com <br>
-        <b>Telefone:</b> (64) 99655-1319 <br>
-        <b>Local:</b> Orizona - Goiás
-    </div>
-    <div id="hobbies">
-        <h1>Hobbies</h1>
-        <p> Sou um flamenguista de nescença e um grande 
-            fissurado por futebol, acompanho muitos times de futebol do exterior e seus campeonatos. Outro hobby
-            é jogar com os meu amigos jogos eletrônicos como, por exemplo, Valorant e Rocket League. Também 
-            gosto muito de assistir filmes, principalmente os de animação como os do Scooby-Doo. 
-        </p>
-    </div>
+            <h1>Sobre mim:</h1>
+            <b>Nome:</b> Cristian Martins Fernandes<br>
+            <b>Data de nascimento:</b> 14/02/2002 <br>
+            <b>Email:</b> cristianmarfer14@gmail.com <br>
+            <b>Telefone:</b> (64) 99655-1319 <br>
+            <b>Local:</b> Orizona - Goiás
+        </div>
+        <div id="hobbies">
+            <h1>Hobbies</h1>
+            <p>Sou um flamenguista de nescença e um grande fissurado por futebol, acompanho muitos times de futebol do exterior e seus campeonatos. Outro hobby
+                é jogar com os meus amigos jogos eletrônicos como, por exemplo, Valorant e Rocket League. Também
+                gosto muito de assistir filmes, principalmente os de animação como os do Scooby-Doo.
+            </p>
+        </div>
     </section>
+
+    <!-- Seção de Formação Acadêmica -->
+    <section id="formacao">
+        <h1>Formação Acadêmica</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Instituição</th>
+                    <th>Ano de Início</th>
+                    <th>Ano de Conclusão</th>
+                    <th>Observações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Técnico em informática integrado ao Ensino Médio</td>
+                    <td>Instituto Federal Goiano - Campus Urutaí (IF)</td>
+                    <td>2017</td>
+                    <td>2019</td>
+                    <td>Concluído</td>
+                </tr>
+                <tr>
+                    <td>Sistemas de informação</td>
+                    <td>Instituto Federal Goiano - Campus Urutaí (IF)</td>
+                    <td>2023</td>
+                    <td>Em andamento</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="skills">
+      <h2>Minhas Habilidades em Linguagens de Programação</h2>
+      <div class="skills-container">
+          <div class="skills-box">
+              <h3>Desenvolvimento Frontend</h3>
+              <div class="skill">
+                  <span>HTML</span>
+                  <small>Iniciante</small>
+              </div>
+              <div class="skill">
+                  <span>CSS</span>
+                  <small>Iniciante</small>
+              </div>
+          </div>
+          <div class="skills-box">
+              <h3>Desenvolvimento Backend</h3>
+              <div class="skill">
+                  <span>C++</span>
+                  <small>Iniciante</small>
+              </div>
+              <div class="skill">
+                  <span>Java</span>
+                  <small>Intermediário</small>
+              </div>
+              <div class="skill">
+                <span>MySQL</span>
+                <small>Iniciante</small>
+            </div>
+          </div>
+      </div>
+  </section>
+  <section id="contact">
+    <h2>Entre em Contato</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+        </div>
+        <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" required placeholder="Assunto da mensagem">
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Sua mensagem"></textarea>
+        </div>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
 </body>
 </html>
