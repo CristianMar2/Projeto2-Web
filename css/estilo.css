@@ -45,6 +45,10 @@ body {
     background-size: 100% 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 #div-imagem{
     text-align: center;
     position: relative;
@@ -186,7 +190,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
