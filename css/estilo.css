@@ -51,6 +51,7 @@ a{
 
 #div-imagem{
     text-align: center;
+    margin-top: 2%;
     position: relative;
 }
 
@@ -77,6 +78,11 @@ a{
     border-radius: 20px;
 }
 
+#info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #about{
     max-width: 25vw;
 }
@@ -92,7 +98,7 @@ a{
 }
 
 table {
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
     border-collapse: collapse;
     background-color: #f2f2f2;
@@ -121,6 +127,25 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
+@media (max-width: 800px) {
+    #imagem-perfil{
+        height: 75%;
+        width: 75%;
+        border-radius: 20px;
+    }
+    .icon{
+        height: 8%;
+        width: 8%;
+        justify-content: center;
+    }
+   
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+}
 #skills {
     padding: 50px;
 }
@@ -190,7 +215,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 95%;
+    width: 35vw;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
