@@ -2,23 +2,24 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página pessoal</title>
-    <link rel="icon" href="img\icone.png" type="image/png">
+    <link rel="icon" href="img\icone.png" type="image/png" />
     <link rel="stylesheet" href="css\estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
-    <header> 
-        <input type="checkbox" id="dropdown" class="checkbox-toggle" />
-        <button class="hamburger-icons">
-          <label for="dropdown">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-x"></i>
-          </label>
-        </button>
+    <header>
         <nav>
+            <input type="checkbox" id="dropdown" class="checkbox-toggle" />
+            <button class="hamburger-icons">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+            </button>
             <ul class="nav-links">
                 <li><a href="#info">Sobre Mim</a></li>
                 <li><a href="#info">Hobbies</a></li>
@@ -28,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <br><br>
+    <br /><br />
     <div id="div-imagem">
         <figure>
             <img id="imagem-perfil" src="img\perfil.jpeg" alt="Foto de perfil" />
@@ -50,23 +51,26 @@
     <section id="info">
         <div id="about">
             <h1>Sobre mim:</h1>
-            <b>Nome:</b> Cristian Martins Fernandes<br>
-            <b>Data de nascimento:</b> 14/02/2002 <br>
-            <b>Email:</b> cristianmarfer14@gmail.com <br>
-            <b>Telefone:</b> (64) 99655-1319 <br>
+            <b>Nome:</b> Cristian Martins Fernandes<br />
+            <b>Data de nascimento:</b> 14/02/2002 <br />
+            <b>Email:</b> cristianmarfer14@gmail.com <br />
+            <b>Telefone:</b> (64) 99655-1319 <br />
             <b>Local:</b> Orizona - Goiás
         </div>
         <div id="hobbies">
             <h1>Hobbies</h1>
-            <p>Sou um flamenguista de nescença e um grande fissurado por futebol, acompanho muitos times de futebol do
-                exterior e seus campeonatos. Outro hobby
-                é jogar com os meus amigos jogos eletrônicos como, por exemplo, Valorant e Rocket League. Também
-                gosto muito de assistir filmes, principalmente os de animação como os do Scooby-Doo.
+            <p>
+                Sou um flamenguista de nescença e um grande fissurado por futebol,
+                acompanho muitos times de futebol do exterior e seus campeonatos.
+                Outro hobby é jogar com os meus amigos jogos eletrônicos como, por
+                exemplo, Valorant e Rocket League. Também gosto muito de assistir
+                filmes, principalmente os de animação como os do Scooby-Doo.
             </p>
         </div>
     </section>
 
-    <section id="formacao"><br>
+    <section id="formacao">
+        <br />
         <h1>Formação Acadêmica</h1>
         <table>
             <thead>
@@ -113,7 +117,7 @@
             <div class="skills-box">
                 <h3>Desenvolvimento Backend</h3>
                 <div class="skill">
-                    <span>C++</span>
+                    <span>C</span>
                     <small>Básico</small>
                 </div>
                 <div class="skill">
@@ -132,15 +136,15 @@
         <form action="#" method="post">
             <div class="form-group">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required placeholder="Seu nome">
+                <input type="text" id="name" name="name" required placeholder="Seu nome" />
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail" />
             </div>
             <div class="form-group">
                 <label for="subject">Assunto:</label>
-                <input type="text" id="subject" name="subject" required placeholder="Assunto da mensagem">
+                <input type="text" id="subject" name="subject" required placeholder="Assunto da mensagem" />
             </div>
             <div class="form-group">
                 <label for="message">Mensagem:</label>
@@ -151,7 +155,7 @@
     </section>
     <footer>
         <div class="container">
-            <hr>
+            <hr />
             <p>&copy; Cristian Martins Fernandes - Todos os direitos reservados.</p>
         </div>
     </footer>

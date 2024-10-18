@@ -28,23 +28,27 @@ h2 {
 }
 
 section {
-    scroll-margin-top: 50px;
-    transition: all 0.5s linear;
-  }
+  scroll-margin-top: 50px;
+  transition: all 0.5s linear;
+}
 
 /***********************************************/
 /*Estilo Barra de Navegação*/
 
-nav {
+header {
+  position: fixed;
+  z-index: 1000;
   background-color: gray;
+  width: 100%;
+}
+
+nav {
   padding: 1rem 1rem;
   border-radius: 8px;
-  margin-bottom: 2.8rem;
-  position: fixed;
+  margin-bottom: 0.1rem;
   top: 0px;
   left: 0;
   width: 100%;
-  z-index: 1000;
 }
 
 .nav-links {
@@ -71,8 +75,11 @@ nav {
   color: black;
 }
 
+/*************************************/
+/*Estilo do hamburguer*/
+
 .hamburger-icons {
-  display: block;
+  display: none;
   border: none;
   background: none;
   cursor: pointer;
@@ -80,13 +87,12 @@ nav {
 
 .hamburger-icons i {
   color: #fff;
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
 /* Esconder o checkbox */
 .checkbox-toggle {
-  display: block;
+  display: none;
   z-index: 2000;
 }
 
@@ -94,6 +100,9 @@ nav {
 /*Estilo da Imagem e ícones*/
 
 #div-imagem {
+  scroll-margin-top: 200px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-top: 2%;
   position: relative;
@@ -119,8 +128,7 @@ nav {
 }
 
 #imagem-perfil {
-  height: 25%;
-  width: 25%;
+  height: 70vh;
   border-radius: 20px;
 }
 
@@ -333,11 +341,96 @@ footer p {
 /*Media Queries*/
 
 @media (max-width: 926px) {
-    html{
-        overflow-x: auto;
-    }
-  
-    #imagem-perfil {
+  header {
+    display: block;
+  }
+  html {
+    overflow-x: auto;
+  }
+
+  #imagem-perfil {
+    height: 75%;
+    width: 75%;
+    border-radius: 20px;
+  }
+
+  .icon {
+    height: 8%;
+    width: 8%;
+    justify-content: center;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: -5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hamburger-icons {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* Exibir os links de navegação quando o checkbox estiver marcado */
+  .checkbox-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .fa-x {
+    display: none !important ;
+  }
+
+  .fa-bars {
+    display: inline-block;
+  }
+
+  /* Mostrar o ícone X quando o checkbox estiver marcado */
+  .checkbox-toggle:checked + .hamburger-icons .fa-x {
+    display: inline-block !important;
+  }
+
+  /* Ocultar o ícone de hambúrguer quando o checkbox estiver marcado */
+  .checkbox-toggle:checked + .hamburger-icons .fa-bars {
+    display: none;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 67vw;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    overflow-x: auto;
+  }
+
+  #imagem-perfil {
     height: 75%;
     width: 75%;
     border-radius: 20px;
@@ -358,44 +451,10 @@ footer p {
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 67vw;
+    width: 50vw;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
 }
-@media (max-width: 1200px) {
-    html{
-        overflow-x: auto;
-    }
-    
-    #imagem-perfil {
-      height: 75%;
-      width: 75%;
-      border-radius: 20px;
-    }
-    .icon {
-      height: 8%;
-      width: 8%;
-      justify-content: center;
-    }
-  
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 50vw;
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-  }
