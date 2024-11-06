@@ -60,7 +60,7 @@
         <div id="hobbies">
             <h1>Hobbies</h1>
             <p>
-                Sou um flamenguista de nescença e um grande fissurado por futebol,
+                Sou um flamenguista de nascença e um grande fissurado por futebol,
                 acompanho muitos times de futebol do exterior e seus campeonatos.
                 Outro hobby é jogar com os meus amigos jogos eletrônicos como, por
                 exemplo, Valorant e Rocket League. Também gosto muito de assistir
@@ -150,15 +150,21 @@
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="5" required placeholder="Sua mensagem"></textarea>
             </div>
-            <button type="submit">Enviar Mensagem</button>
+            <button id = "submit">Enviar Mensagem</button>
         </form>
     </section>
     <footer>
         <div class="container">
-            <hr />
+            <hr/>
             <p>&copy; Cristian Martins Fernandes - Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
+<script>
+    const butaoForm = document.getElementById("submit").addEventListener("click", funSubmit);
 
+function funSubmit() {
+  alert ("Essa funcionalidade não está implementada ainda!");
+}
+</script>
 </html>
