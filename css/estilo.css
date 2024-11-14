@@ -267,6 +267,32 @@ tr:hover {
   color: gray;
 }
 
+/* Estilo da seção de Portfólio */
+#portfolio {
+  text-align: center;
+  padding: 50px;
+}
+
+.portfolio-btn-container {
+  margin-top: 20px;
+}
+
+.portfolio-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-btn:hover {
+  background-color: #45a049;
+}
+
+
 /***********************************************/
 /*Estilo do formulário*/
 
