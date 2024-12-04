@@ -37,9 +37,16 @@ section {
 
 header {
   position: fixed;
-  z-index: 1000;
-  background-color: gray;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro e transparente */
+  color: white;
+  z-index: 10;
+  height: 3rem; /* Altura fina para não interferir no conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
