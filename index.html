@@ -15,14 +15,18 @@
   <body>
     <header>
       <nav>
+        <!-- Menu hambúrguer com checkbox toggle para navegação -->
         <input type="checkbox" id="dropdown" class="checkbox-toggle" />
         <button class="hamburger-icons">
           <label for="dropdown">
             <i class="fa-solid fa-bars"></i>
+            <!-- Ícone de menu aberto -->
             <i class="fa-solid fa-x"></i>
+            <!-- Ícone de menu fechado -->
           </label>
         </button>
         <ul class="nav-links">
+          <!-- Links de navegação -->
           <li><a href="#info">Sobre Mim</a></li>
           <li><a href="#info">Hobbies</a></li>
           <li><a href="#formacao">Formação Acadêmica</a></li>
@@ -32,126 +36,147 @@
         </ul>
       </nav>
     </header>
-    <br /><br />
-    <main>
-    <div id="div-imagem">
-      <figure>
-        <img id="imagem-perfil" src="img\perfil.jpeg" alt="Foto de perfil" />
-      </figure>
-    </div>
-    <section id="icons">
-      <div id="socials-container">
-        <a
-          href="https://www.linkedin.com/in/cristian-martins-fernandes-a51694285/"
-          target="_blank"
-        >
-          <img src="img\linkedin.png" alt="My LinkedIn profile" class="icon" />
-        </a>
-        <a href="https://github.com/CristianMar2" target="_blank">
-          <img src="img\github.png" alt="My Github profile" class="icon" />
-        </a>
-        <a href="https://www.instagram.com/crismfern/" target="_blank">
-          <img
-            src="img\instagram.png"
-            alt="My instagram profile"
-            class="icon"
-          />
-        </a>
-      </div>
-    </section>
-    <section id="info">
-      <div id="about">
-        <h1>Sobre mim:</h1>
-        <b>Nome:</b> Cristian Martins Fernandes<br />
-        <b>Data de nascimento:</b> 14/02/2002 <br />
-        <b>Email:</b> cristianmarfer14@gmail.com <br />
-        <b>Telefone:</b> (64) 99655-1319 <br />
-        <b>Local:</b> Orizona - Goiás
-      </div>
-      <div id="hobbies">
-        <h1>Hobbies</h1>
-        <p>
-          Sou um flamenguista de nascença e um grande fissurado por futebol,
-          acompanho muitos times de futebol do exterior e seus campeonatos.
-          Outro hobby é jogar com os meus amigos jogos eletrônicos como, por
-          exemplo, Valorant e Rocket League. Também gosto muito de assistir
-          filmes, principalmente os de animação como os do Scooby-Doo.
-        </p>
-      </div>
-    </section>
 
-    <section id="formacao">
-      <br />
-      <h1>Formação Acadêmica</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Curso</th>
-            <th>Instituição</th>
-            <th>Ano de Início</th>
-            <th>Ano de Conclusão</th>
-            <th>Observações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Técnico em informática integrado ao Ensino Médio</td>
-            <td>Instituto Federal Goiano - Campus Urutaí (IF)</td>
-            <td>2017</td>
-            <td>2019</td>
-            <td>Concluído</td>
-          </tr>
-          <tr>
-            <td>Sistemas de informação</td>
-            <td>Instituto Federal Goiano - Campus Urutaí (IF)</td>
-            <td>2023</td>
-            <td>Em andamento</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section id="skills">
-      <h2>Minhas Habilidades em Linguagens de Programação</h2>
-      <div class="skills-container">
-        <div class="skills-box">
-          <h3>Desenvolvimento Frontend</h3>
-          <div class="skill">
-            <span>HTML</span>
-            <small>Básico</small>
+    <main>
+      <div id="div-imagem">
+        <figure>
+          <!-- Imagem de perfil -->
+          <img id="imagem-perfil" src="img\perfil.jpeg" alt="Foto de perfil" />
+        </figure>
+      </div>
+
+      <section id="icons">
+        <div id="socials-container">
+          <!-- Links para redes sociais -->
+          <a
+            href="https://www.linkedin.com/in/cristian-martins-fernandes-a51694285/"
+            target="_blank"
+          >
+            <img
+              src="img\linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/CristianMar2" target="_blank">
+            <img src="img\github.png" alt="My Github profile" class="icon" />
+          </a>
+          <a href="https://www.instagram.com/crismfern/" target="_blank">
+            <img
+              src="img\instagram.png"
+              alt="My instagram profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section id="info">
+        <div id="about">
+          <h1>Sobre mim:</h1>
+          <!-- Informações pessoais -->
+          <b>Nome:</b> Cristian Martins Fernandes<br />
+          <b>Data de nascimento:</b> 14/02/2002 <br />
+          <b>Email:</b> cristianmarfer14@gmail.com <br />
+          <b>Telefone:</b> (64) 99655-1319 <br />
+          <b>Local:</b> Orizona - Goiás
+        </div>
+        <div id="hobbies">
+          <h1>Hobbies</h1>
+          <!-- Lista de hobbies -->
+          <p>
+            Sou um flamenguista de nascença e um grande fissurado por futebol,
+            acompanho muitos times de futebol do exterior e seus campeonatos.
+            Outro hobby é jogar com os meus amigos jogos eletrônicos como, por
+            exemplo, Valorant e Rocket League. Também gosto muito de assistir
+            filmes, principalmente os de animação como os do Scooby-Doo.
+          </p>
+        </div>
+      </section>
+
+      <section id="formacao">
+        <h1>Formação Acadêmica</h1>
+        <!-- Tabela de formação acadêmica -->
+        <table>
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Instituição</th>
+              <th>Ano de Início</th>
+              <th>Ano de Conclusão</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Técnico em informática integrado ao Ensino Médio</td>
+              <td>Instituto Federal Goiano - Campus Urutaí (IF)</td>
+              <td>2017</td>
+              <td>2019</td>
+              <td>Concluído</td>
+            </tr>
+            <tr>
+              <td>Sistemas de informação</td>
+              <td>Instituto Federal Goiano - Campus Urutaí (IF)</td>
+              <td>2023</td>
+              <td>Em andamento</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="skills">
+        <h2>Minhas Habilidades em Linguagens de Programação</h2>
+        <div class="skills-container">
+          <!-- Habilidades em desenvolvimento -->
+          <div class="skills-box">
+            <h3>Desenvolvimento Frontend</h3>
+            <div class="skill">
+              <span>HTML</span>
+              <small>Básico</small>
+            </div>
+            <div class="skill">
+              <span>CSS</span>
+              <small>Básico</small>
+            </div>
           </div>
-          <div class="skill">
-            <span>CSS</span>
-            <small>Básico</small>
+          <div class="skills-box">
+            <h3>Desenvolvimento Backend</h3>
+            <div class="skill">
+              <span>C</span>
+              <small>Básico</small>
+            </div>
+            <div class="skill">
+              <span>Java</span>
+              <small>Intermediário</small>
+            </div>
+            <div class="skill">
+              <span>MySQL</span>
+              <small>Básico</small>
+            </div>
           </div>
         </div>
-        <div class="skills-box">
-          <h3>Desenvolvimento Backend</h3>
-          <div class="skill">
-            <span>C</span>
-            <small>Básico</small>
-          </div>
-          <div class="skill">
-            <span>Java</span>
-            <small>Intermediário</small>
-          </div>
-          <div class="skill">
-            <span>MySQL</span>
-            <small>Básico</small>
-          </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Meu Portfólio</h2>
+        <p>
+          Veja alguns dos meus trabalhos e projetos desenvolvidos ao longo dos
+          meus estudos e carreira.
+        </p>
+        <div class="portfolio-btn-container">
+          <!-- Link para o portfólio -->
+          <a href="portfolio.html" target="_blank" class="portfolio-btn"
+            >Acessar Portfólio</a
+          >
         </div>
-      </div>
-    </section>
-    <section id="portfolio">
-      <h2>Meu Portfólio</h2>
-      <p>Veja alguns dos meus trabalhos e projetos desenvolvidos ao longo dos meus estudos e carreira.</p>
-      <div class="portfolio-btn-container">
-        <a href="portfolio.html" target="_blank" class="portfolio-btn">Acessar Portfólio</a>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+
     <section id="contact">
       <h2>Entre em Contato</h2>
+      <!-- Formulário de contato -->
       <form action="#" method="post">
         <div class="form-group">
           <label for="name">Nome:</label>
@@ -196,27 +221,32 @@
         <button id="submit">Enviar Mensagem</button>
       </form>
     </section>
+
     <footer>
       <div class="container">
         <hr />
-        <p> &copy; <span id = "anoAtual"></span>  Cristian Martins Fernandes - Todos os direitos reservados.</p>
+        <p>
+          &copy; <span id="anoAtual"></span> Cristian Martins Fernandes - Todos
+          os direitos reservados.
+        </p>
       </div>
     </footer>
-  </body>
-  <script>
-    const butaoForm = document
-      .getElementById("submit")
-      .addEventListener("click", funSubmit);
 
-    function funSubmit() {
-      alert("Essa funcionalidade não está implementada ainda!");
-    }
-    function mostrarAno() {
-      const data = new Date();
-      const ano = data.getFullYear();
-      document.getElementById("anoAtual").innerHTML += ano;
-    }
-    // Chama a função para exibir o ano ao carregar a página
-    mostrarAno();
-  </script>
+    <script>
+      // Exibe mensagem ao clicar no botão de envio
+      document.getElementById("submit").addEventListener("click", funSubmit);
+
+      function funSubmit() {
+        alert("Essa funcionalidade não está implementada ainda!");
+      }
+
+      // Atualiza o ano atual no rodapé
+      function mostrarAno() {
+        const data = new Date();
+        const ano = data.getFullYear();
+        document.getElementById("anoAtual").innerHTML += ano;
+      }
+      mostrarAno(); // Chama a função ao carregar a página
+    </script>
+  </body>
 </html>
